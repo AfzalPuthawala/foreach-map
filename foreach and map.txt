@@ -1,0 +1,41 @@
+map:-
+----                                   
+Functionality:  1) Performs given "transformation" on "copy" of each element      
+		2)creates a new array with the results of calling a provided function on every	element in the calling array.
+				    				  
+
+ Return value :Returns new array with transformed elements leaving back original array unchanged                             
+
+ Preferable  usage scenario:Obtaining array containing output of some processing done on each element of the array.
+
+ example :For example: 1)obtaining array of lengths of each string in the array.
+		       2)let doubled = arr.map(num => {
+							return num * 2;
+					      });
+ 										   
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+foreach:-
+---------
+
+Functionality:  1) Performs given operation on each element of the array  			      
+                  
+                2)executes a provided function once for each array element.     	   
+
+Return value :   Returns undefined
+
+
+Preferable usage scenario:  Performing non-transformation like processing on each element.           
+
+example    :  For example: 1)saving all elements inthe database.    
+                 	   2)arr.forEach((num, index) =>{ 
+          
+				  			return arr[index] = num * 2;  
+    							});							     
+														
+				
+				Result:// arr = [2, 4, 6, 8, 10]  
+                                Result:// doubled = [2, 4, 6, 8, 10]
+*
+
+														  
